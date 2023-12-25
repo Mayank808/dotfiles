@@ -39,3 +39,6 @@ if command -v brew &>/dev/null; then
 
     fortune | cowsay -f eyes
 fi
+
+source ./.aliases.zsh
+source ./.prompt.zsh

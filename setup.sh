@@ -11,7 +11,6 @@ formulae=(
   "zsh-syntax-highlighting"
   "zsh-autosuggestions"
   "zsh-completions"
-  "web-search"
   "cowsay"
   "fortune"
   "rtx"
@@ -21,6 +20,7 @@ formulae=(
 # "go"
 # "nvm"
 # powerlevel10k
+# "zsh-autocompletion"
 casks=(
   iterm2
   alt-tab
@@ -200,6 +200,18 @@ fi
 #   fi
 # fi
 
+symLink() {
+  ln -s "$(pwd)/$1" "$2"
+}
+
 echo "Beginning symlink..."
+symLink zshenv.zsh ~/.zshenv
+
+mkdir -p ~/.config/zsh
+symLink zshrc.zsh ~/.config/zsh/.zshrc
+symLink aliases.zsh ~/.config/zsh/.aliases.zsh
+symLink prompt.zsh ~/.config/zsh/.promopt.zsh
+
+
 
 echo "System Ready to use"
