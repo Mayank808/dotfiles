@@ -14,7 +14,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 if command -v brew &>/dev/null; then
-    eval "$(rtx activate zsh)"
+    # eval "$(rtx activate zsh)"
     
     # Adds syntax highlighting from plugin
     ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$(brew --prefix)/share/zsh-syntax-highlighting/highlighters
@@ -40,5 +40,5 @@ if command -v brew &>/dev/null; then
     fortune | cowsay -f eyes
 fi
 
-source ./.aliases.zsh
-source ./.prompt.zsh
+source "$ZDOTDIR/.prompt.zsh"
+source "$ZDOTDIR/.aliases.zsh"

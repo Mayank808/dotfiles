@@ -209,8 +209,9 @@ symLink zshenv.zsh ~/.zshenv
 
 mkdir -p ~/.config/zsh
 symLink zshrc.zsh ~/.config/zsh/.zshrc
+symLink profile.zsh ~/.config/zsh/.zprofile
 symLink aliases.zsh ~/.config/zsh/.aliases.zsh
-symLink prompt.zsh ~/.config/zsh/.promopt.zsh
+symLink prompt.zsh ~/.config/zsh/.prompt.zsh
 
 
 

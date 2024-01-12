@@ -10,12 +10,6 @@ export XDG_STATE_HOME="$HOME/.local/state"
 
 export PATH="$HOME/bin:$PATH"
 
-# Load the Zsh profile
-source $ZDOTDIR/.zshprofile
-
-# Load the Zshrc file
-source $ZDOTDIR/.zshrc
-
 # Add support for UTF-8 to the terminal
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
