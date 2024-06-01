@@ -1,6 +1,6 @@
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-conda_path="/Users/mayank/Developer/system-dependancies/miniconda3"
+conda_path="/Users/mayank/miniconda3"
 __conda_setup="$('${conda_path}/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
