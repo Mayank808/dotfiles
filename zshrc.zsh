@@ -16,7 +16,7 @@ unset __conda_setup
 
 if command -v brew &>/dev/null; then
     # eval "$(rtx activate zsh)"
-    
+
     # Adds syntax highlighting from plugin
     ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$(brew --prefix)/share/zsh-syntax-highlighting/highlighters
     source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -42,8 +42,9 @@ if command -v brew &>/dev/null; then
 fi
 
 export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 source "$ZDOTDIR/.prompt.zsh"
 source "$ZDOTDIR/.aliases.zsh"
+export EDITOR="code -w"
